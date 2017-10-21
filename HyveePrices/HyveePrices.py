@@ -235,7 +235,7 @@ jokes=[
     'What do you call a fake noodle? An impasta',
     'Why did the tomato blush? Because it saw the salad dressing.',
     'Why don’t eggs tell jokes? They’d crack each other up!',
-    'What does a nosey pepper do? Gets jalapeño business!',
+    'What does a nosey pepper do? Gets jalapeno business!',
     'Waffles are just pancakes with abs',
     'Your name must be Coca Cola, because you’re soda licious.'
 ]
