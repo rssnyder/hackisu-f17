@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:pas="http://www.hy-vee.com">
+ <head id="ctl00_Head1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet"/>
+  <link href="/css/bootstrap.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/css/master.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/css/facebox.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/dist/@hy-vee/navigation/dist/client/styles.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/css/navigation.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8"/>
+  <title>
+   Hy-Vee Press Room
+  </title>
+  <meta content="8jWCglkScInmQ/voshCQGh6H36zEZ2u50UisVytg0iw=" name="verify-v1"/>
+  <meta content="A resource for press releases and other important news from Hy-Vee." id="ctl00_metaDescript" name="description"/>
+  <meta content="press room, journalism, announcements, press releases, official news" id="ctl00_metaKeywords" name="keywords"/>
+  <meta content="Hy-Vee" property="og:title"/>
+  <meta content="company" property="og:type"/>
+  <meta content="http://www.hy-vee.com" property="og:url"/>
+  <meta content="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/hyvee-logo.png" property="og:image"/>
+  <meta content="Hy-Vee" property="og:site_name"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="190322544333196" property="fb:app_id"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e8571f3a0d","applicationID":"8969641","transactionName":"ZABTNhAEV0YHWhZYW11KcDEySlpaC0kDX00cFUMHERYURwlWDx5QVgNQFw4RF1QVSRo=","queueTime":0,"applicationTime":100,"agent":"","atts":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VQYEUldbARAIXVdbAQUG"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);
+  </script>
+  <link href="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/favicon.ico" rel="shortcut icon"/>
+  <link href="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/touch-icon-iphone.png" rel="apple-touch-icon"/>
+  <link href="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="144x144"/>
+  <!-- Google Tag Manager -->
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5TL68P');
+  </script>
+  <!-- End Google Tag Manager -->
+  <script src="/js/jquery-3.2.1.min.js" type="text/javascript">
+  </script>
+  <script src="/dist/babel-polyfill/dist/polyfill.min.js" type="text/javascript">
+  </script>
+  <script src="/dist/react/dist/react.min.js" type="text/javascript">
+  </script>
+  <script src="/dist/react-dom/dist/react-dom.min.js" type="text/javascript">
+  </script>
+  <script src="/dist/create-react-class/create-react-class.min.js" type="text/javascript">
+  </script>
+  <script src="/dist/@hy-vee/navigation/dist/client/app.js?version=7.0.1" type="text/javascript">
+  </script>
+  <script language="JavaScript" type="text/javascript">
+   function setTitle(stitle) {
+                document.title = stitle;
+            }
+  </script>
+ </head>
+ <body class="no-transition" id="ctl00_bodyMaster">
+  <div class="skipnav" style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;">
+   <a href="#mainContent">
+    Skip to main content
+   </a>
+  </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5TL68P" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="header-container">
+   <header class="hyvee-header">
+    <nav class="mobile-menu-nav" role="navigation">
+     <button class="mobile-header-navigation-container-open-button" type="button">
+      menu
+     </button>
+     <a class="hy-vee-logo-link" href="/" title="Hy-Vee">
+      <svg class="hy-vee-logo" focusable="false" tabindex="-1" viewbox="0 0 150 52" xmlns="http://www.w3.org/2000/svg">
+       <path d="M.0714285714.714285714L10.9285714.714285714 10.9285714 9.21428571 15.8571429 9.21428571 15.8571429.714285714 27 .714285714 27 28.2857143C27 28.2857143 27.7142857 34.4285714 25 37.9285714 21.7142857 42 15.7857143 41.4285714 15.7857143 41.4285714L15.7857143 12.9285714 10.8571429 12.9285714 10.8571429 41.4285714C10.8571429 41.4285714 6.85714286 42.0714286 2.64285714 38.6428571-.571428571 36 .0714285714 28.2857143.0714285714 28.2857143L.0714285714.714285714.0714285714.714285714zM110 40.9285714L110 36.2857143 104.071429 36.2857143C104.071429 36.2857143 102.928571 36.6428571 101.857143 35.5714286 100.714286 34.5 100.928571 32.0714286 100.928571 32.0714286L100.928571 14.1428571C100.928571 14.1428571 100.928571 12.2857143 102.785714 12.2142857 104.928571 12.1428571 105.285714 14.1428571 105.285714 14.1428571L105.285714 28.1428571C104.857143 31 102.428571 32.1428571 102.428571 32.1428571 102.428571 32.1428571 110.142857 32.7142857 112.428571 31.2142857 115.357143 29.2142857 115.428571 25.9285714 115.428571 25.9285714L115.428571 18.5714286C115.428571 15.5714286 114.285714 13.4285714 112.142857 11.5714286 109.357143 9.21428571 106.642857 9.07142857 103.785714 9 102.071429 8.92857143 96.0714286 8.92857143 93.0714286 12.5714286 90.7142857 15.4285714 90.5 18.5714286 90.5 18.5714286L90.5 30.5714286C90.5 30.5714286 90.5 34.1428571 93.1428571 37.1428571 96.8571429 41.3571429 100.928571 41 100.928571 41L110 41 110 40.9285714zM82.4285714.714285714L72.0714286 32.5 72.0714286.714285714 61.7857143.714285714 61.7857143 19.5C63.3571429 20.2857143 64.4285714 21.8571429 64.4285714 23.7142857 64.4285714 25.5714286 63.3571429 27.1428571 61.7857143 27.9285714L61.7857143 40.9285714 64.3571429 40.9285714C72.0714286 40.9285714 75.2857143 41.3571429 79.5 36.9285714 81 35.3571429 82.3571429 32.0714286 82.3571429 32.0714286L94.5.642857143 82.4285714.642857143 82.4285714.714285714zM55 23.7142857C55 21.9285714 56 20.4285714 57.4285714 19.6428571L57.4285714 9.28571429 47.0714286 9.28571429 47.0714286 37.3571429C47.0714286 37.3571429 43.6428571 37.6428571 42.9285714 36.4285714 42.2142857 35.2142857 42.3571429 32.1428571 42.3571429 32.1428571L42.3571429 9.28571429 31.3571429 9.28571429 31.3571429 32.2142857C31.3571429 32.2142857 31.7142857 36.5 33.8571429 38.5714286 36.7857143 41.4285714 40.8571429 41.0714286 40.8571429 41.0714286L47 41.0714286 47 51.7142857 57.3571429 51.7142857 57.3571429 27.8571429C56 27 55 25.5 55 23.7142857zM137.785714 40.9285714L137.785714 36.2857143 131.857143 36.2857143C131.857143 36.2857143 130.714286 36.6428571 129.642857 35.5714286 128.5 34.5 128.714286 32.0714286 128.714286 32.0714286L128.714286 14.0714286C128.714286 14.0714286 128.714286 12.2142857 130.571429 12.1428571 132.714286 12.0714286 133.071429 14.0714286 133.071429 14.0714286L133.071429 28.0714286C132.642857 30.9285714 130.214286 32.0714286 130.214286 32.0714286 130.214286 32.0714286 137.928571 32.6428571 140.214286 31.1428571 143.142857 29.1428571 143.214286 25.8571429 143.214286 25.8571429L143.214286 18.5C143.214286 15.5 142.071429 13.3571429 139.928571 11.5 137.142857 9.14285714 134.428571 9 131.571429 8.92857143 129.857143 8.85714286 123.857143 8.85714286 120.857143 12.5 118.5 15.3571429 118.285714 18.5 118.285714 18.5L118.285714 30.5C118.285714 30.5 118.285714 34.0714286 120.928571 37.0714286 124.642857 41.2857143 128.714286 40.9285714 128.714286 40.9285714L137.785714 40.9285714 137.785714 40.9285714zM144.571426 35.9285714C144.071426 36.4285714 143.785712 37.0714286 143.785712 37.8571429 143.785712 38.6428571 144.071426 39.2857143 144.571426 39.7857143 145.071426 40.2857143 145.714284 40.5714286 146.499998 40.5714286 147.285712 40.5714286 147.857141 40.2857143 148.428569 39.7857143 148.928569 39.2857143 149.214284 38.6428571 149.214284 37.8571429 149.214284 37.1428571 148.928569 36.5 148.428569 35.9285714 147.928569 35.4285714 147.285712 35.1428571 146.499998 35.1428571 145.714284 35.1428571 145.142855 35.4285714 144.571426 35.9285714zM148.714284 40.1428571C148.071426 40.7857143 147.357141 41.0714286 146.499998 41.0714286 145.642855 41.0714286 144.857141 40.7857143 144.285712 40.1428571 143.642855 39.5 143.357141 38.7857143 143.357141 37.9285714 143.357141 37.0714286 143.642855 36.3571429 144.285712 35.7142857 144.928569 35.0714286 145.642855 34.7857143 146.499998 34.7857143 147.357141 34.7857143 148.142855 35.0714286 148.714284 35.7142857 149.357141 36.3571429 149.642855 37.0714286 149.642855 37.9285714 149.642855 38.7142857 149.357141 39.5 148.714284 40.1428571zM147.071426 36.7142857C146.928569 36.6428571 146.642855 36.5714286 146.357141 36.5714286L145.857141 36.5714286 145.857141 37.8571429 146.428569 37.8571429C146.714284 37.8571429 146.857141 37.8571429 146.999998 37.7857143 147.214284 37.7142857 147.357141 37.5 147.357141 37.2142857 147.285712 36.9285714 147.214284 36.7857143 147.071426 36.7142857zM146.428569 36.1428571C146.857141 36.1428571 147.142855 36.2142857 147.357141 36.2857143 147.714284 36.4285714 147.857141 36.7142857 147.928569 37.1428571 147.928569 37.4285714 147.785712 37.7142857 147.571426 37.8571429 147.428569 37.9285714 147.285712 38 147.071426 38 147.357141 38.0714286 147.571426 38.1428571 147.642855 38.3571429 147.785712 38.5714286 147.857141 38.7142857 147.857141 38.9285714L147.857141 39.2142857 147.857141 39.5 147.857141 39.7142857 147.857141 39.7857143 147.285712 39.7857143 147.285712 39.7857143C147.285712 39.7857143 147.285712 39.7857143 147.285712 39.7142857L147.285712 39.5714286 147.285712 39.2857143C147.285712 38.8571429 147.142855 38.6428571 146.928569 38.5 146.785712 38.4285714 146.571426 38.3571429 146.285712 38.3571429L145.785712 38.3571429 145.785712 39.7142857 145.142855 39.7142857 145.142855 36.2857143 146.428569 36.2857143 146.428569 36.1428571z">
+       </path>
+      </svg>
+     </a>
+    </nav>
+    <div class="navigation-container">
+     <ul class="secondary-navigation-links" role="navigation">
+      <li class="">
+       <a href="/stores/" target="_self" title="Find a Store">
+        Find a Store
+       </a>
+      </li>
+      <li class="">
+       <a href="/contact.aspx" target="_self" title="Contact Hy-Vee">
+        Contact Hy-Vee
+       </a>
+      </li>
+      <li class="">
+       <a href="/company/about-hy-vee" target="_self" title="About Hy-Vee">
+        About Hy-Vee
+       </a>
+      </li>
+      <li class="">
+       <a href="/careers" target="_self" title="Careers">
+        Careers
+       </a>
+      </li>
+     </ul>
+     <div class="user-navigation-container">
+      <div class="store-quick-select">
+      </div>
+      <div class="account-menu">
+      </div>
+     </div>
+     <nav class="navigation-container-nav" role="navigation">
+      <button class="navigation-container-close-button" type="button">
+       close
+      </button>
+      <a class="hy-vee-logo-link" href="/" title="Hy-Vee">
+       <svg class="hy-vee-logo" focusable="false" tabindex="-1" viewbox="0 0 150 52" xmlns="http://www.w3.org/2000/svg">
+        <path d="M.0714285714.714285714L10.9285714.714285714 10.9285714 9.21428571 15.8571429 9.21428571 15.8571429.714285714 27 .714285714 27 28.2857143C27 28.2857143 27.7142857 34.4285714 25 37.9285714 21.7142857 42 15.7857143 41.4285714 15.7857143 41.4285714L15.7857143 12.9285714 10.8571429 12.9285714 10.8571429 41.4285714C10.8571429 41.4285714 6.85714286 42.0714286 2.64285714 38.6428571-.571428571 36 .0714285714 28.2857143.0714285714 28.2857143L.0714285714.714285714.0714285714.714285714zM110 40.9285714L110 36.2857143 104.071429 36.2857143C104.071429 36.2857143 102.928571 36.6428571 101.857143 35.5714286 100.714286 34.5 100.928571 32.0714286 100.928571 32.0714286L100.928571 14.1428571C100.928571 14.1428571 100.928571 12.2857143 102.785714 12.2142857 104.928571 12.1428571 105.285714 14.1428571 105.285714 14.1428571L105.285714 28.1428571C104.857143 31 102.428571 32.1428571 102.428571 32.1428571 102.428571 32.1428571 110.142857 32.7142857 112.428571 31.2142857 115.357143 29.2142857 115.428571 25.9285714 115.428571 25.9285714L115.428571 18.5714286C115.428571 15.5714286 114.285714 13.4285714 112.142857 11.5714286 109.357143 9.21428571 106.642857 9.07142857 103.785714 9 102.071429 8.92857143 96.0714286 8.92857143 93.0714286 12.5714286 90.7142857 15.4285714 90.5 18.5714286 90.5 18.5714286L90.5 30.5714286C90.5 30.5714286 90.5 34.1428571 93.1428571 37.1428571 96.8571429 41.3571429 100.928571 41 100.928571 41L110 41 110 40.9285714zM82.4285714.714285714L72.0714286 32.5 72.0714286.714285714 61.7857143.714285714 61.7857143 19.5C63.3571429 20.2857143 64.4285714 21.8571429 64.4285714 23.7142857 64.4285714 25.5714286 63.3571429 27.1428571 61.7857143 27.9285714L61.7857143 40.9285714 64.3571429 40.9285714C72.0714286 40.9285714 75.2857143 41.3571429 79.5 36.9285714 81 35.3571429 82.3571429 32.0714286 82.3571429 32.0714286L94.5.642857143 82.4285714.642857143 82.4285714.714285714zM55 23.7142857C55 21.9285714 56 20.4285714 57.4285714 19.6428571L57.4285714 9.28571429 47.0714286 9.28571429 47.0714286 37.3571429C47.0714286 37.3571429 43.6428571 37.6428571 42.9285714 36.4285714 42.2142857 35.2142857 42.3571429 32.1428571 42.3571429 32.1428571L42.3571429 9.28571429 31.3571429 9.28571429 31.3571429 32.2142857C31.3571429 32.2142857 31.7142857 36.5 33.8571429 38.5714286 36.7857143 41.4285714 40.8571429 41.0714286 40.8571429 41.0714286L47 41.0714286 47 51.7142857 57.3571429 51.7142857 57.3571429 27.8571429C56 27 55 25.5 55 23.7142857zM137.785714 40.9285714L137.785714 36.2857143 131.857143 36.2857143C131.857143 36.2857143 130.714286 36.6428571 129.642857 35.5714286 128.5 34.5 128.714286 32.0714286 128.714286 32.0714286L128.714286 14.0714286C128.714286 14.0714286 128.714286 12.2142857 130.571429 12.1428571 132.714286 12.0714286 133.071429 14.0714286 133.071429 14.0714286L133.071429 28.0714286C132.642857 30.9285714 130.214286 32.0714286 130.214286 32.0714286 130.214286 32.0714286 137.928571 32.6428571 140.214286 31.1428571 143.142857 29.1428571 143.214286 25.8571429 143.214286 25.8571429L143.214286 18.5C143.214286 15.5 142.071429 13.3571429 139.928571 11.5 137.142857 9.14285714 134.428571 9 131.571429 8.92857143 129.857143 8.85714286 123.857143 8.85714286 120.857143 12.5 118.5 15.3571429 118.285714 18.5 118.285714 18.5L118.285714 30.5C118.285714 30.5 118.285714 34.0714286 120.928571 37.0714286 124.642857 41.2857143 128.714286 40.9285714 128.714286 40.9285714L137.785714 40.9285714 137.785714 40.9285714zM144.571426 35.9285714C144.071426 36.4285714 143.785712 37.0714286 143.785712 37.8571429 143.785712 38.6428571 144.071426 39.2857143 144.571426 39.7857143 145.071426 40.2857143 145.714284 40.5714286 146.499998 40.5714286 147.285712 40.5714286 147.857141 40.2857143 148.428569 39.7857143 148.928569 39.2857143 149.214284 38.6428571 149.214284 37.8571429 149.214284 37.1428571 148.928569 36.5 148.428569 35.9285714 147.928569 35.4285714 147.285712 35.1428571 146.499998 35.1428571 145.714284 35.1428571 145.142855 35.4285714 144.571426 35.9285714zM148.714284 40.1428571C148.071426 40.7857143 147.357141 41.0714286 146.499998 41.0714286 145.642855 41.0714286 144.857141 40.7857143 144.285712 40.1428571 143.642855 39.5 143.357141 38.7857143 143.357141 37.9285714 143.357141 37.0714286 143.642855 36.3571429 144.285712 35.7142857 144.928569 35.0714286 145.642855 34.7857143 146.499998 34.7857143 147.357141 34.7857143 148.142855 35.0714286 148.714284 35.7142857 149.357141 36.3571429 149.642855 37.0714286 149.642855 37.9285714 149.642855 38.7142857 149.357141 39.5 148.714284 40.1428571zM147.071426 36.7142857C146.928569 36.6428571 146.642855 36.5714286 146.357141 36.5714286L145.857141 36.5714286 145.857141 37.8571429 146.428569 37.8571429C146.714284 37.8571429 146.857141 37.8571429 146.999998 37.7857143 147.214284 37.7142857 147.357141 37.5 147.357141 37.2142857 147.285712 36.9285714 147.214284 36.7857143 147.071426 36.7142857zM146.428569 36.1428571C146.857141 36.1428571 147.142855 36.2142857 147.357141 36.2857143 147.714284 36.4285714 147.857141 36.7142857 147.928569 37.1428571 147.928569 37.4285714 147.785712 37.7142857 147.571426 37.8571429 147.428569 37.9285714 147.285712 38 147.071426 38 147.357141 38.0714286 147.571426 38.1428571 147.642855 38.3571429 147.785712 38.5714286 147.857141 38.7142857 147.857141 38.9285714L147.857141 39.2142857 147.857141 39.5 147.857141 39.7142857 147.857141 39.7857143 147.285712 39.7857143 147.285712 39.7857143C147.285712 39.7857143 147.285712 39.7857143 147.285712 39.7142857L147.285712 39.5714286 147.285712 39.2857143C147.285712 38.8571429 147.142855 38.6428571 146.928569 38.5 146.785712 38.4285714 146.571426 38.3571429 146.285712 38.3571429L145.785712 38.3571429 145.785712 39.7142857 145.142855 39.7142857 145.142855 36.2857143 146.428569 36.2857143 146.428569 36.1428571z">
+        </path>
+       </svg>
+      </a>
+      <a class="home-link" href="/" title="Hy-Vee">
+       <svg class="home icon" fill="#bbbbbb" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+        <g>
+         <path d="M26.9185038,13.8305193 L26.9185038,29.4332448 L20.6104456,29.4332448 L20.6104456,20.2509836 L11.4667947,20.2509836 C11.4277159,23.3116228 11.4046565,26.3724338 11.3758371,29.4332448 L5.08294497,29.4332448 L5.08294497,13.9381282 L3.14200436,15.9288752 L3.14200436,31.7288244 L13.2864504,31.7288244 C13.3251413,28.6681852 13.3485304,25.6073169 13.377408,22.5465632 L18.669505,22.5465632 L18.669505,31.7288244 L28.8594492,31.7288244 L28.8594492,15.8929674 L26.9185038,13.8305193 Z">
+         </path>
+         <path d="M15.6064601,1.02052881 L0.564166788,15.6783295 C0.178920727,16.0516447 0.131803152,16.7837939 0.465267394,17.2150888 C0.798731636,17.6463837 1.45266133,17.6991566 1.83790739,17.3257871 L16.2281668,3.2964339 L30.148351,17.3088651 C30.5256698,17.6911295 31.1796092,17.6544651 31.5210104,17.2320651 C31.8624165,16.8096651 31.8297425,16.0775159 31.4524238,15.6953058 L16.8953668,1.03745085 C16.4859462,0.74180339 16.0007147,0.74180339 15.6064601,1.02063729 L15.6064601,1.02052881 Z">
+         </path>
+        </g>
+       </svg>
+       <span>
+        Home
+       </span>
+      </a>
+     </nav>
+     <ul class="primary-navigation-links" role="navigation">
+      <li class="">
+       <div class="primary-navigation-drop-down-menu">
+        <button class="primary-navigation-button" title="Shop" type="button">
+         <img alt="Shop" class="primary-navigation-link-icon" src="https://73a9772faa6b8d9ba52d-04ad287a37512c3dedf93e32c3974a01.ssl.cf2.rackcdn.com/shopping-cart.svg">
+          <span>
+           Shop
+          </span>
+          <svg class="drop-down-arrow icon" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+           <g fill="none" fill-rule="evenodd">
+            <rect height="32" rx="8" width="32">
+            </rect>
+            <polyline points="0 0 6.252 7.25 12.505 0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(10 14)">
+            </polyline>
+           </g>
+          </svg>
+         </img>
+        </button>
+        <section class="primary-navigation-drop-down-container">
+         <header class="drop-down-header">
+          <a href="/grocery" title="Shop for Groceries">
+           <img alt="Shop" src="https://73a9772faa6b8d9ba52d-04ad287a37512c3dedf93e32c3974a01.ssl.cf2.rackcdn.com/hy-vee-aisles-online.svg">
+           </img>
+          </a>
+          <a href="/grocery" title="Shop for Groceries">
+           <span class="subtitle">
+            Shop for Groceries
+           </span>
+           <svg class="link-out icon" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+            <g fill="#E2231A" fill-rule="evenodd">
+             <path d="M29.5685024,0.0137954353 L19.6754508,0.0137954353 C18.8822133,0.0137954353 18.239346,0.656662722 18.239346,1.44990025 C18.239346,2.24313779 18.8822133,2.88600507 19.6754508,2.88600507 L26.2610468,2.88600507 L12.16763,16.9794218 C11.6065007,17.5402063 11.6065007,18.4496703 12.16763,19.0104548 C12.4480223,19.290847 12.8156706,19.4312156 13.1829741,19.4312156 C13.5502775,19.4312156 13.9179259,19.290847 14.1983181,19.0104548 L28.1323976,5.07603043 L28.1323976,11.3426069 C28.1323976,12.1358445 28.7752649,12.7787117 29.5685024,12.7787117 C30.3617399,12.7787117 31.0046072,12.1358445 31.0046072,11.3426069 L31.0046072,1.44990025 C31.0046072,0.656662722 30.3617399,0.0137954353 29.5685024,0.0137954353 Z">
+             </path>
+             <path d="M24.601111,14.4769298 C23.8078735,14.4769298 23.1650062,15.1197971 23.1650062,15.9130347 L23.1650062,27.2432257 C23.1650062,27.762279 22.7266562,28.2006289 22.207603,28.2006289 L3.89761145,28.2006289 C3.37855819,28.2006289 2.94020823,27.762279 2.94020823,27.2432257 L2.94020823,8.93323415 C2.94020823,8.4141809 3.37855819,7.97583094 3.89761145,7.97583094 L15.2678092,7.97583094 C16.0610468,7.97583094 16.7039141,7.33296365 16.7039141,6.53972612 C16.7039141,5.74648859 16.0610468,5.1036213 15.2678092,5.1036213 L3.89761145,5.1036213 C1.78587518,5.1036213 0.067998598,6.82149789 0.067998598,8.93323415 L0.067998598,27.2432257 C0.067998598,29.354962 1.78587518,31.0728385 3.89761145,31.0728385 L22.207603,31.0728385 C24.3193393,31.0728385 26.0372158,29.354962 26.0372158,27.2432257 L26.0372158,15.9130347 C26.0372158,15.120142 25.3943486,14.4769298 24.601111,14.4769298 Z">
+             </path>
+            </g>
+           </svg>
+          </a>
+         </header>
+         <ul class="drop-down-links" role="navigation">
+          <li class="desktop">
+           <a href="/shop/Bakery-C11.aspx" target="_self" title="Bakery &amp; Cakes">
+            Bakery &amp; Cakes
+           </a>
+          </li>
+          <li class="mobile">
+           <a href="/mobile/shop/category-list.aspx?c=11" target="_self" title="Bakery &amp; Cakes">
+            Bakery &amp; Cakes
+           </a>
+          </li>
+          <li class="desktop">
+           <a href="/shop/Catering-C10.aspx" target="_self" title="Catering">
+            Catering
+           </a>
+          </li>
+          <li class="mobile">
+           <a href="/mobile/shop/category-list.aspx?c=10" target="_self" title="Catering">
+            Catering
+           </a>
+          </li>
+          <li class="desktop">
+           <a href="/shop/Floral-C9.aspx" target="_self" title="Flowers">
+            Flowers
+           </a>
+          </li>
+          <li class="mobile">
+           <a href="/mobile/shop/category-list.aspx?c=9" target="_self" title="Flowers">
+            Flowers
+           </a>
+          </li>
+          <li class="desktop">
+           <a href="/shop/Gifts-C4.aspx" target="_self" title="Gifts &amp; Gift Cards">
+            Gifts &amp; Gift Cards
+           </a>
+          </li>
+          <li class="mobile">
+           <a href="/mobile/shop/category-list.aspx?c=4" target="_self" title="Gifts &amp; Gift Cards">
+            Gifts &amp; Gift Cards
+           </a>
+          </li>
+          <li class="">
+           <a href="https://hyvee.lifepics.com/" target="_self" title="Photo Center">
+            Photo Center
+           </a>
+          </li>
+          <li class="">
+           <a href="/deals/shopping-list.aspx" target="_self" title="My Shopping List">
+            My Shopping List
+           </a>
+          </li>
+         </ul>
+        </section>
+       </div>
+      </li>
+      <li class="">
+       <div class="primary-navigation-drop-down-menu">
+        <button class="primary-navigation-button" title="Deals" type="button">
+         <img alt="Deals" class="primary-navigation-link-icon" src="https://73a9772faa6b8d9ba52d-04ad287a37512c3dedf93e32c3974a01.ssl.cf2.rackcdn.com/tag.svg">
+          <span>
+           Deals
+          </span>
+          <svg class="drop-down-arrow icon" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+           <g fill="none" fill-rule="evenodd">
+            <rect height="32" rx="8" width="32">
+            </rect>
+            <polyline points="0 0 6.252 7.25 12.505 0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(10 14)">
+            </polyline>
+           </g>
+          </svg>
+         </img>
+        </button>
+        <section class="primary-navigation-drop-down-container">
+         <header class="drop-down-header">
+          <a href="/deals" title="All Deals &amp; Savings">
+           <img alt="Deals" src="https://73a9772faa6b8d9ba52d-04ad287a37512c3dedf93e32c3974a01.ssl.cf2.rackcdn.com/hy-vee-deals.svg">
+           </img>
+          </a>
+          <a href="/deals" title="All Deals &amp; Savings">
+           <span class="subtitle">
+            All Deals &amp; Savings
+           </span>
+           <svg class="link-out icon" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+            <g fill="#E2231A" fill-rule="evenodd">
+             <path d="M29.5685024,0.0137954353 L19.6754508,0.0137954353 C18.8822133,0.0137954353 18.239346,0.656662722 18.239346,1.44990025 C18.239346,2.24313779 18.8822133,2.88600507 19.6754508,2.88600507 L26.2610468,2.88600507 L12.16763,16.9794218 C11.6065007,17.5402063 11.6065007,18.4496703 12.16763,19.0104548 C12.4480223,19.290847 12.8156706,19.4312156 13.1829741,19.4312156 C13.5502775,19.4312156 13.9179259,19.290847 14.1983181,19.0104548 L28.1323976,5.07603043 L28.1323976,11.3426069 C28.1323976,12.1358445 28.7752649,12.7787117 29.5685024,12.7787117 C30.3617399,12.7787117 31.0046072,12.1358445 31.0046072,11.3426069 L31.0046072,1.44990025 C31.0046072,0.656662722 30.3617399,0.0137954353 29.5685024,0.0137954353 Z">
+             </path>
+             <path d="M24.601111,14.4769298 C23.8078735,14.4769298 23.1650062,15.1197971 23.1650062,15.9130347 L23.1650062,27.2432257 C23.1650062,27.762279 22.7266562,28.2006289 22.207603,28.2006289 L3.89761145,28.2006289 C3.37855819,28.2006289 2.94020823,27.762279 2.94020823,27.2432257 L2.94020823,8.93323415 C2.94020823,8.4141809 3.37855819,7.97583094 3.89761145,7.97583094 L15.2678092,7.97583094 C16.0610468,7.97583094 16.7039141,7.33296365 16.7039141,6.53972612 C16.7039141,5.74648859 16.0610468,5.1036213 15.2678092,5.1036213 L3.89761145,5.1036213 C1.78587518,5.1036213 0.067998598,6.82149789 0.067998598,8.93323415 L0.067998598,27.2432257 C0.067998598,29.354962 1.78587518,31.0728385 3.89761145,31.0728385 L22.207603,31.0728385 C24.3193393,31.0728385 26.0372158,29.354962 26.0372158,27.2432257 L26.0372158,15.9130347 C26.0372158,15.120142 25.3943486,14.4769298 24.601111,14.4769298 Z">
+             </path>
+            </g>
+           </svg>
+          </a>
+         </header>
+         <ul class="drop-down-links" role="navigation">
+          <li class="">
+           <a href="/deals/ads.aspx" target="_self" title="Weekly Ads">
+            Weekly Ads
+           </a>
+          </li>
+          <li class="">
+           <a href="/deals/coupons.aspx" target="_self" title="Coupons">
+            Coupons
+           </a>
+          </li>
+          <li class="">
+           <a href="/deals/perks.aspx" target="_self" title="Fuel Saver + Perks">
+            Fuel Saver + Perks
+           </a>
+          </li>
+         </ul>
+        </section>
+       </div>
+      </li>
+      <li class="">
+       <a class="primary-navigation-link" href="/meal-solutions/recipes/" target="_self" title="Recipes &amp; Ideas">
+        <img alt="Recipes &amp; Ideas" class="primary-navigation-link-icon" src="https://73a9772faa6b8d9ba52d-04ad287a37512c3dedf93e32c3974a01.ssl.cf2.rackcdn.com/pot.svg">
+         <span>
+          Recipes &amp; Ideas
+         </span>
+        </img>
+       </a>
+      </li>
+      <li class="">
+       <div class="primary-navigation-drop-down-menu">
+        <button class="primary-navigation-button" title="Health &amp; Pharmacy" type="button">
+         <img alt="Health &amp; Pharmacy" class="primary-navigation-link-icon" src="https://73a9772faa6b8d9ba52d-04ad287a37512c3dedf93e32c3974a01.ssl.cf2.rackcdn.com/pill.svg">
+          <span>
+           Health &amp; Pharmacy
+          </span>
+          <svg class="drop-down-arrow icon" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+           <g fill="none" fill-rule="evenodd">
+            <rect height="32" rx="8" width="32">
+            </rect>
+            <polyline points="0 0 6.252 7.25 12.505 0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(10 14)">
+            </polyline>
+           </g>
+          </svg>
+         </img>
+        </button>
+        <section class="primary-navigation-drop-down-container">
+         <header class="drop-down-header">
+          <a href="/health/default.aspx" title="View all Health &amp; Pharmacy">
+           <span class="subtitle">
+            View all Health &amp; Pharmacy
+           </span>
+           <svg class="link-out icon" focusable="false" height="16" tabindex="-1" viewbox="0 0 32 32" width="16">
+            <g fill="#E2231A" fill-rule="evenodd">
+             <path d="M29.5685024,0.0137954353 L19.6754508,0.0137954353 C18.8822133,0.0137954353 18.239346,0.656662722 18.239346,1.44990025 C18.239346,2.24313779 18.8822133,2.88600507 19.6754508,2.88600507 L26.2610468,2.88600507 L12.16763,16.9794218 C11.6065007,17.5402063 11.6065007,18.4496703 12.16763,19.0104548 C12.4480223,19.290847 12.8156706,19.4312156 13.1829741,19.4312156 C13.5502775,19.4312156 13.9179259,19.290847 14.1983181,19.0104548 L28.1323976,5.07603043 L28.1323976,11.3426069 C28.1323976,12.1358445 28.7752649,12.7787117 29.5685024,12.7787117 C30.3617399,12.7787117 31.0046072,12.1358445 31.0046072,11.3426069 L31.0046072,1.44990025 C31.0046072,0.656662722 30.3617399,0.0137954353 29.5685024,0.0137954353 Z">
+             </path>
+             <path d="M24.601111,14.4769298 C23.8078735,14.4769298 23.1650062,15.1197971 23.1650062,15.9130347 L23.1650062,27.2432257 C23.1650062,27.762279 22.7266562,28.2006289 22.207603,28.2006289 L3.89761145,28.2006289 C3.37855819,28.2006289 2.94020823,27.762279 2.94020823,27.2432257 L2.94020823,8.93323415 C2.94020823,8.4141809 3.37855819,7.97583094 3.89761145,7.97583094 L15.2678092,7.97583094 C16.0610468,7.97583094 16.7039141,7.33296365 16.7039141,6.53972612 C16.7039141,5.74648859 16.0610468,5.1036213 15.2678092,5.1036213 L3.89761145,5.1036213 C1.78587518,5.1036213 0.067998598,6.82149789 0.067998598,8.93323415 L0.067998598,27.2432257 C0.067998598,29.354962 1.78587518,31.0728385 3.89761145,31.0728385 L22.207603,31.0728385 C24.3193393,31.0728385 26.0372158,29.354962 26.0372158,27.2432257 L26.0372158,15.9130347 C26.0372158,15.120142 25.3943486,14.4769298 24.601111,14.4769298 Z">
+             </path>
+            </g>
+           </svg>
+          </a>
+         </header>
+         <ul class="drop-down-links" role="navigation">
+          <li class="">
+           <a href="/health/pharmacy" target="_self" title="Pharmacy">
+            Pharmacy
+           </a>
+          </li>
+          <li class="">
+           <a href="/health/hy-vee-dietitians" target="_self" title="Dietitians">
+            Dietitians
+           </a>
+          </li>
+          <li class="">
+           <a href="/health/retail-health-clinics.aspx" target="_self" title="Clinics">
+            Clinics
+           </a>
+          </li>
+          <li class="">
+           <a href="/health/screenings/group.aspx" target="_self" title="Health for Business">
+            Health for Business
+           </a>
+          </li>
+          <li class="">
+           <a href="/my-pharmacy/refill" target="_self" title="Express Refill">
+            Express Refill
+           </a>
+          </li>
+          <li class="">
+           <a href="/my-hy-vee/prescriptions/my-prescriptions.aspx" target="_self" title="My Prescriptions">
+            My Prescriptions
+           </a>
+          </li>
+         </ul>
+        </section>
+       </div>
+      </li>
+     </ul>
+    </div>
+    <nav class="ecommerce-container" role="navigation">
+     <a class="shopping-list-link" href="/deals/shopping-list.aspx" title="Shopping Lists">
+      <svg class="shopping-list-icon" focusable="false" tabindex="-1" viewbox="0 0 29 34">
+       <g fill="none" fill-rule="evenodd" stroke="#3F3F3F" stroke-linecap="round" stroke-width=".889" transform="translate(0 1)">
+        <path d="M27.5766,24.4881724 C27.5996,22.5740983 26.0426,20.8371017 24.1536,20.8565495 C23.0496,20.8667852 22.0436,21.5484822 21.4276,22.3898559 C20.8516,21.5198222 19.8946,20.9261522 18.7926,20.8616673 C16.9156,20.7521455 15.2676,22.2598626 15.1876,24.1626774 C15.1836,24.2343273 15.1836,24.3059771 15.1846,24.3766034 C15.1986,25.135068 15.5116,25.8577077 16.0076,26.4257886 L20.5636,31.6398492 C20.9596,32.0932902 21.6486,32.1035259 22.0576,31.6623677 L26.6866,26.6745158 C27.1756,26.1473778 27.5036,25.4738694 27.5636,24.7502061 C27.5716,24.6642263 27.5756,24.5761993 27.5766,24.4881724 Z" stroke-linejoin="round">
+        </path>
+        <path d="M12.0342 9.51407407L5.2952 9.51407407M14.3182 14.7670303L5.2392 14.7670303M12.0342 20.0210101L5.2952 20.0210101M5.2393.372783838L5.2393 3.98802963M15.636.372783838L15.636 3.98802963M10.4443.372783838L10.4443 3.98802963M12.1549 26.6599811L3.0309 26.6599811C1.7709 26.6599811.7499 25.6067286.7499 24.3313616L.7499 4.47309899C.7499 3.1874963 1.7689 2.14447946 3.0249 2.14447946L17.8569 2.14447946C19.1169 2.14447946 20.1389 3.19875556 20.1389 4.47309899L20.1389 17.3270788">
+        </path>
+       </g>
+      </svg>
+     </a>
+     <a class="shopping-cart-link" href="/shop/cart.aspx" title="Shopping Cart">
+      <svg class="shopping-cart icon" focusable="false" tabindex="-1" viewbox="0 0 29 34">
+       <g fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.0909091,26.8725376 C25.7021818,26.8725376 26.1818182,27.3600501 26.1818182,27.9813606 C26.1818182,28.6023015 25.7021818,29.0901837 25.0909091,29.0901837 C24.4796364,29.0901837 24,28.6023015 24,27.9813606 C24,27.3600501 24.4796364,26.8725376 25.0909091,26.8725376 L25.0909091,26.8725376 Z M6.90909091,26.8725376 C7.52036364,26.8725376 8,27.3600501 8,27.9813606 C8,28.6023015 7.52036364,29.0901837 6.90909091,29.0901837 C6.29781818,29.0901837 5.81818182,28.6023015 5.81818182,27.9813606 C5.81818182,27.3600501 6.29781818,26.8725376 6.90909091,26.8725376 L6.90909091,26.8725376 Z M25.0909091,25.3941069 C23.6938182,25.3941069 22.5454545,26.5613279 22.5454545,27.9813606 C22.5454545,29.4013933 23.6938182,30.5686144 25.0909091,30.5686144 C26.488,30.5686144 27.6363636,29.4013933 27.6363636,27.9813606 C27.6363636,26.5613279 26.488,25.3941069 25.0909091,25.3941069 L25.0909091,25.3941069 Z M6.90909091,25.3941069 C5.512,25.3941069 4.36363636,26.5613279 4.36363636,27.9813606 C4.36363636,29.4013933 5.512,30.5686144 6.90909091,30.5686144 C8.30618182,30.5686144 9.45454545,29.4013933 9.45454545,27.9813606 C9.45454545,26.5613279 8.30618182,25.3941069 6.90909091,25.3941069 L6.90909091,25.3941069 Z M6.284,7.28333055 L30.284,7.28333055 L27.6705455,15.9343679 C27.3567273,17.0102959 25.9992727,18.0019533 24.7272727,18.0019533 L9.62509091,18.0019533 L6.284,7.28333055 Z M19.2727273,5.80489984 L25.8181818,5.80489984 L25.8181818,4.32646912 L19.2727273,4.32646912 L19.2727273,5.80489984 Z M11.2727273,5.80489984 L17.8181818,5.80489984 L17.8181818,2.47843072 L11.2727273,2.47843072 L11.2727273,5.80489984 Z M0.727272727,1 C0.324363636,1 0,1.32969005 0,1.73921536 C0,2.14874067 0.324363636,2.47843072 0.727272727,2.47843072 L1.81818182,2.47843072 C2.432,2.47843072 2.79163636,2.61444634 3.05672727,2.82475311 C3.32,3.03358145 3.51890909,3.34959602 3.67054545,3.80680072 L3.67054545,3.81825856 L8.14763636,18.1638414 C7.40618182,18.4181315 6.76981818,18.949997 6.34072727,19.6651878 C5.73890909,20.6683031 5.45454545,22.0040652 5.45454545,23.5460685 C5.45454545,23.9330477 5.80109091,24.2852838 6.18181818,24.2852838 L25.8181818,24.2852838 C26.2025455,24.2908279 26.5567273,23.9367438 26.5567273,23.5460685 C26.5567273,23.1553931 26.2025455,22.801309 25.8181818,22.8068531 L6.98872727,22.8068531 C7.07272727,21.8285016 7.268,20.9769255 7.59090909,20.4391463 C7.98690909,19.779027 8.47854545,19.4940595 9.09090909,19.480384 C9.10618182,19.4807536 24.7272727,19.480384 24.7272727,19.480384 C26.6683636,19.480384 28.5185455,18.208564 29.0567273,16.362004 C29.0567273,16.362004 31.8512727,7.07893751 31.9545455,6.79803567 C31.984,6.7178308 32,6.63503868 32,6.54411519 C32,6.13569871 31.6745455,5.80489984 31.2727273,5.80489984 L27.2727273,5.80489984 L27.2727273,3.58725376 C27.2727273,3.20027452 26.9261818,2.8480384 26.5454545,2.8480384 L19.2727273,2.8480384 L19.2727273,1.73921536 C19.2727273,1.35223612 18.9261818,1 18.5454545,1 L10.5454545,1 C10.1494545,1 9.81818182,1.40619884 9.81818182,1.73921536 L9.81818182,5.80489984 L5.81818182,5.80489984 L5.05672727,3.35624896 L5.05672727,3.34479112 C4.84509091,2.69945611 4.50436364,2.09477795 3.95454545,1.65827128 C3.40472727,1.22213422 2.67236364,1 1.81818182,1 L0.727272727,1 Z" fill="#555555">
+        </path>
+       </g>
+      </svg>
+     </a>
+    </nav>
+    <div class="search-container search-form-menu-closed">
+     <button class="mobile-menu-search-toggle" type="button">
+      <svg class="search icon" fill="#3F3F3F" focusable="false" tabindex="-1" viewbox="0 0 32 32">
+       <path d="M31.17,31.75a.5.5,0,0,1-.35-.15l-8.11-8.11a.5.5,0,0,1,.71-.71l8.11,8.11a.5.5,0,0,1-.35.85Z">
+       </path>
+       <path d="M13.46,1.25A12.46,12.46,0,1,1,1,13.71,12.47,12.47,0,0,1,13.46,1.25m0-1A13.46,13.46,0,1,0,26.92,13.71,13.46,13.46,0,0,0,13.46.25Z">
+       </path>
+       <path d="M4.13,13.77a.5.5,0,0,1-.5-.49A10.23,10.23,0,0,1,7.16,5.92a8.38,8.38,0,0,1,6.35-2.47.5.5,0,1,1-.11,1A7.38,7.38,0,0,0,7.84,6.65a9.22,9.22,0,0,0-3.2,6.61.5.5,0,0,1-.49.51Z">
+       </path>
+      </svg>
+     </button>
+     <form action="/search/results.aspx" class="search-form" method="GET" role="form">
+      <fieldset class="search-fieldset">
+       <label for="q" tabindex="-1">
+        <span class="search-label-text">
+         Search
+        </span>
+        <svg class="search icon" fill="#3F3F3F" focusable="false" height="32" tabindex="-1" viewbox="0 0 32 32" width="24">
+         <path d="M31.17,31.75a.5.5,0,0,1-.35-.15l-8.11-8.11a.5.5,0,0,1,.71-.71l8.11,8.11a.5.5,0,0,1-.35.85Z">
+         </path>
+         <path d="M13.46,1.25A12.46,12.46,0,1,1,1,13.71,12.47,12.47,0,0,1,13.46,1.25m0-1A13.46,13.46,0,1,0,26.92,13.71,13.46,13.46,0,0,0,13.46.25Z">
+         </path>
+         <path d="M4.13,13.77a.5.5,0,0,1-.5-.49A10.23,10.23,0,0,1,7.16,5.92a8.38,8.38,0,0,1,6.35-2.47.5.5,0,1,1-.11,1A7.38,7.38,0,0,0,7.84,6.65a9.22,9.22,0,0,0-3.2,6.61.5.5,0,0,1-.49.51Z">
+         </path>
+        </svg>
+       </label>
+       <input autocomplete="off" class="search-query-input" name="q" placeholder="How can we help?" title="Search">
+        <button class="submit-button" type="submit">
+         Search
+        </button>
+        <input name="form" type="hidden" value="cse-search-box">
+         <input name="t13n_langs" type="hidden" value="en">
+          <input name="cx" type="hidden" value="000921688332201118093:xl4jkfemw-e">
+           <input name="cof" type="hidden" value="FORID:10">
+            <input name="ie" type="hidden" value="UTF-8">
+             <input name="sa" type="hidden" value="GO">
+             </input>
+            </input>
+           </input>
+          </input>
+         </input>
+        </input>
+       </input>
+      </fieldset>
+     </form>
+    </div>
+    <div class="overlay">
+    </div>
+   </header>
+  </div>
+  <form action="/company/press-room/default.aspx" id="aspnetForm" method="post" name="aspnetForm" onsubmit="if (typeof(WebForm_OnSubmit) == 'function') { return WebForm_OnSubmit(); } else { return true; }">
+   <div>
+    <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="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"/>
+    <script src="/ScriptResource.axd?d=CRf9UgAd_6iXZROD_MCYetTIBEwtOHw8g2scUr_Pc5oemJKFPLGmJs-dK1IiimZdeWuXbfLXJ83XVutuINYx5oMMNPjFDrnRzdzju7g7pDXEDBekTiyk1kJ8hpPA7VKKbeniyv7WS2lqp9lqi1VV5iajEAoNHhZC3O8efk59JUr6E-AV0&amp;t=ffffffffbcb9b94a" type="text/javascript">
+    </script>
+    <script src="/ScriptResource.axd?d=yasiNzz39F41YshrHi2DL1hJOysnOvW20HYoNpTxFp6mRnmOLrbLPqque9fDKxpwNZd6D2ed3eA82fihKWvyYapvlIdhLAn_eW4IzKFWg-8QcAnGNj49xO3FgpUrAb2Bbg1z1KU1kMUNHxeaMUfN4wqCnXE1&amp;t=5f915bbd" type="text/javascript">
+    </script>
+    <script src="/ScriptResource.axd?d=yuTFGR24NsaaP0xirLj3PLe4___OJBto3OzPoyly-cGS3EOEmrlaqUoANcoR-JJ7MQ_Eqzjm48w49QiuWAlpwMsNz5Iyu8RmRjajIHz1FL_lKWlNo1xrgUao5bbsXRZimt2BwfEGggN5Khd2X7jwqfvKW4M1&amp;t=5f915bbd" type="text/javascript">
+    </script>
+    <script src="/ScriptResource.axd?d=5zmnis1GCtl14demHFcCHqrGw3BQmUyPBnrGcRt5FTLQDeVCEjJP8hjQvi6R2ZjTQbWg9-9FEkNUqY2kfNAes1PF2h5zsbSKco1ZoKCT9XymDlvvr0yGRSuqUVgfUe0V1EqYZT0FfJL8zpAjqyHZ9e4vrRE1&amp;t=5f915bbd" type="text/javascript">
+    </script>
+    <script src="/ScriptResource.axd?d=6oJf8swjdxzTLKTu9MGju5gro45A1X2gdDElG-pklIQmA2vTlOmGbqn-1wIHCN6xQYzVMahBVnJ7G4yU_s7GrR03UFHWDcgaznt-vgfdpJuACX_1kEEG9fFcU1Yqyb4ybhtmlLIoYLaJJlBqMN10HcMoezVCFvpvwL7ftv0Sq_hu9PCj0&amp;t=5f915bbd" type="text/javascript">
+    </script>
+    <script src="/ScriptResource.axd?d=7R0XhsuxVMNvC6Bg5mA3eRSWASiw0wOulhumCop81In3xb5bW_25HWfMpZbdEftvEFEF6Bb5KJ_NVlUXg8UHrN22IOlXeLttfhl6gBok2omM3q83AyR0HFx7LN_F8Ok5Il1mSJg9tPw8_SLRGpzd0C9XLsW-X2PH1_wmZjdLCQzYwWiB0&amp;t=5f915bbd" type="text/javascript">
+    </script>
+    <script src="/ScriptResource.axd?d=Plzvd8wRFS_OZ8MIDwmnDkEmqj7VSWHKLbPmWqD17ZkMmmVXdzLbjWukQ4RtK4JejdRPv8W3HIk12h2mi5aromKEFBv6sqQjl7qEpg2tsbsMIFaAramQ_NB2Tb9tgQ4IZ_Xq3ygYD_FR6zZu_sRYXchWYvdsW8A9F4ob_z60fK4MG9O_89Wlnc85vPPMfqC_AqJItg2&amp;t=5f915bbd" type="text/javascript">
+    </script>
+    <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="32520D88"/>
+    <input id="__VIEWSTATEENCRYPTED" name="__VIEWSTATEENCRYPTED" type="hidden" value=""/>
+    <input id="ctl00_ScriptManager1" name="ctl00$ScriptManager1" type="hidden"/>
+    <div class="content-container">
+     <div id="wrapper">
+      <div class="container content">
+       <!-- InstanceBeginEditable name="Content" -->
+       <div class="row">
+        <div class="col-sm-3" id="nav_section_y">
+         <h2>
+          <a href="/company/about-hy-vee/default.aspx">
+           About Hy-Vee
+          </a>
+         </h2>
+         <ul>
+          <li>
+           <a href="/company/press-room/default.aspx">
+            Press Room
+           </a>
+          </li>
+          <li>
+           <a href="/company/sustainability/default.aspx">
+            Sustainability
+           </a>
+          </li>
+          <li>
+           <a href="/company/community/default.aspx">
+            Community
+           </a>
+          </li>
+          <li>
+           <a href="/company/scholarships/default.aspx">
+            Scholarships
+           </a>
+          </li>
+          <li>
+           <a href="/resources/">
+            Resources
+           </a>
+          </li>
+          <li>
+           <a href="/helpful-ideas/">
+            Helpful Ideas
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-sm-6">
+         <div id="nav_breadcrumb">
+          <ul>
+           <li>
+            <a href="/Company/">
+             Company
+            </a>
+           </li>
+           <li>
+            <a href="/company/press-room/">
+             Press Room
+            </a>
+           </li>
+           <li>
+            Home
+           </li>
+          </ul>
+          <a id="mainContent" name="mainContent">
+          </a>
+         </div>
+         <div id="page_content">
+          <h1 id="ctl00_cph_main_content_ArticleList_Header">
+           Press Room
+          </h1>
+          <div id="ctl00_cph_main_content_ArticleList_upArticleList">
+           <div>
+            <table border="0" cellpadding="0" cellspacing="0" class="icon_results" id="ctl00_cph_main_content_ArticleList_gvRecentArticles" width="100%">
+             <tr>
+              <td>
+               <h3 class="alt">
+                <a href="/company/press-room/promotions/customer-experience-survey-rules.aspx" id="ctl00_cph_main_content_ArticleList_gvRecentArticles_ctl02_aLink1">
+                 Hy-Vee "Customer Experience Survey" Sweepstakes Official Rules
+                </a>
+               </h3>
+               <b>
+                10/18/2017
+               </b>
+               <br/>
+               Official Rules for this promotion.
+               <a href="/company/press-room/promotions/customer-experience-survey-rules.aspx" id="ctl00_cph_main_content_ArticleList_gvRecentArticles_ctl02_aLink2">
+                Read More
+               </a>
+               <hr>
+               </hr>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <h3 class="alt">
+                <a href="/company/press-room/press-releases/hy-vee-stores-celebrate-halloween-party.aspx" id="ctl00_cph_main_content_ArticleList_gvRecentArticles_ctl03_aLink1">
+                 Hy-Vee Stores Celebrate Fall with Annual Halloween Party This Saturday
+                </a>
+               </h3>
+               <b>
+                10/17/2017
+               </b>
+               <br/>
+               Event features activities, food and fun for all ages
+               <a href="/company/press-room/press-releases/hy-vee-stores-celebrate-halloween-party.aspx" id="ctl00_cph_main_content_ArticleList_gvRecentArticles_ctl03_aLink2">
+                Read More
+               </a>
+               <hr>
+               </hr>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <h3 class="alt">
+                <a href="/company/press-room/announcements/halloween-party.aspx" id="ctl00_cph_main_content_ArticleList_gvRecentArticles_ctl04_aLink1">
+                 Halloween Party
+                </a>
+               </h3>
+               <b>
+                10/13/2017
+               </b>
+               <br/>
+               Gather your ghouls and goblins and stop by your local Hy-Vee on Saturday, October 21, from 1 p.m. to 3 p.m.
+               <a href="/company/press-room/announcements/halloween-party.aspx" id="ctl00_cph_main_content_ArticleList_gvRecentArticles_ctl04_aLink2">
+                Read More
+               </a>
+               <hr>
+               </hr>
+              </td>
+             </tr>
+            </table>
+           </div>
+           <div style="text-align: right;">
+            <a href="/company/press-room/default.aspx?viewall=1" id="ctl00_cph_main_content_ArticleList_aViewAll">
+             View All Press Room Articles
+            </a>
+           </div>
+          </div>
+          <div id="updateProgressDiv" style="display: none; height: 40px; width: 200px;">
+           <img src="https://8e3463198116a37cf901-4c8f9ce7667a46d130eda30090f49466.ssl.cf2.rackcdn.com/images/ajax-loader-uc.gif"/>
+           Loading, Please Wait...
+          </div>
+          <script language="javascript" type="text/javascript">
+           function onUpdating(){
+        // get the update progress div
+        var updateProgressDiv = $get('updateProgressDiv'); 
+        // make it visible
+        updateProgressDiv.style.display = '';
+
+        //  get the gridview element        
+        var gridView = $get('ctl00_cph_main_content_ArticleList_gvRecentArticles');
+        
+        // get the bounds of both the gridview and the progress div
+        var gridViewBounds = Sys.UI.DomElement.getBounds(gridView);
+        var updateProgressDivBounds = Sys.UI.DomElement.getBounds(updateProgressDiv);
+        
+        //    do the math to figure out where to position the element (the center of the gridview)
+        var x = gridViewBounds.x + Math.round(gridViewBounds.width / 2) - Math.round(updateProgressDivBounds.width / 2);
+        var y = gridViewBounds.y + Math.round(gridViewBounds.height / 2) - Math.round(updateProgressDivBounds.height / 2);
+        
+        //    set the progress element to this position
+        Sys.UI.DomElement.setLocation (updateProgressDiv, x, y);        
+    }
+
+    function onUpdated() {
+        // get the update progress div
+        var updateProgressDiv = $get('updateProgressDiv'); 
+        // make it invisible
+        updateProgressDiv.style.display = 'none';
+    }
+          </script>
+          <hr/>
+          <div class="feed">
+           <div class="row">
+            <div class="col-xs-2">
+             <img alt="" class="img-responsive" height="60" src="/webres/Image/CMS/Company/icon_crrntpromo.jpg" width="60"/>
+            </div>
+            <div class="col-xs-10">
+             <a href="/company/press-room/promotions/default.aspx">
+              <strong>
+               Current Promotions
+              </strong>
+             </a>
+             <br/>
+             Exciting opportunities we'd like to share.
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-xs-2">
+             <img alt="" class="img-responsive" height="60" src="/webres/Image/CMS/Company/icon_recll.jpg" width="60"/>
+            </div>
+            <div class="col-xs-10">
+             <a href="/company/press-room/recalls/default.aspx">
+              <strong>
+               Recalls
+              </strong>
+             </a>
+             <br/>
+             Keeping you and your family informed.
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-xs-2">
+             <img alt="" class="img-responsive" height="60" src="/webres/Image/CMS/Company/icon_prssrels.jpg" width="60"/>
+            </div>
+            <div class="col-xs-10">
+             <a href="/company/press-room/press-releases/default.aspx">
+              <strong>
+               Press Releases
+              </strong>
+             </a>
+             <br/>
+             What's going on at Hy-Vee.
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-xs-2">
+             <img alt="" class="img-responsive" height="60" src="/webres/Image/CMS/Company/icon_anncmnt.jpg" width="60"/>
+            </div>
+            <div class="col-xs-10">
+             <a href="/company/press-room/announcements/default.aspx">
+              <strong>
+               Announcements
+              </strong>
+             </a>
+             <br/>
+             News we think you should know about.
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3">
+         <div class="card util-margin-top-30">
+          <div class="card-description">
+           <img alt="Seasons" class="img-responsive" src="https://721695561982f42f75d3-9784fd013699897797da8b04ffded30e.ssl.cf2.rackcdn.com/seasons-logo.svg"/>
+           <p>
+            Hy-Vee Seasons provides you with recipes, crafts, tips and helpful seasonal information. Celebrate the seasons in your life!
+           </p>
+           <p>
+            <a href="/seasons/default.aspx">
+             Helpful Products And Ideas
+            </a>
+           </p>
+          </div>
+         </div>
+         <div class="card">
+          <div class="card-description">
+           <img alt="Midwest Heritage Bank" class="img-responsive" src="https://721695561982f42f75d3-9784fd013699897797da8b04ffded30e.ssl.cf2.rackcdn.com/midwest-heritage-bank-logo.svg"/>
+           <p>
+            Get secure access to your accounts from any web-connected computer with Internet banking convenient online bill pay.
+           </p>
+           <p>
+            <a href="/resources/midwest-heritage-bank/default.aspx">
+             Online Bank
+            </a>
+           </p>
+          </div>
+         </div>
+         <div class="card">
+          <div class="card-description">
+           <h5>
+            Weddings
+           </h5>
+           <p>
+            If you are planning a wedding, Hy-Vee can help with beautiful flowers, magnificent cakes, amazing catering and more.
+           </p>
+           <p>
+            <a href="/resources/wedding/default.aspx">
+             Hy-Vee Will Make Your Wedding An Event To Remember
+            </a>
+           </p>
+           <hr/>
+           <h5>
+            Our Brands
+           </h5>
+           <p>
+            Hy-Vee is dedicated to providing our customers with consistent quality and everyday value in all our private-brand products.
+           </p>
+           <p>
+            <a href="/resources/our-brands/default.aspx">
+             Hy-Vee Brands
+            </a>
+           </p>
+           <hr/>
+           <h5>
+            Homegrown
+           </h5>
+           <p>
+            When you see the Hy-Vee Homegrown logo, you can have confidence that the produce was grown within 200 miles of that store.
+           </p>
+           <p>
+            <a href="/resources/homegrown.aspx">
+             Homegrown
+            </a>
+           </p>
+           <hr/>
+           <h5>
+            Conference Center
+           </h5>
+           <p>
+            No matter the type of event you are planning or what your event entails, the Ron Pearson Center can accommodate all of your needs!
+           </p>
+           <p>
+            <a href="/conference-center/">
+             Check it out
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="footer-container">
+     </div>
+    </div>
+    <script type="text/javascript">
+     //<![CDATA[
+
+Sys.Application.setServerId("ctl00_ScriptManager1", "ctl00$ScriptManager1");
+
+Sys.Application._enableHistoryInScriptManager();
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.Animation.UpdatePanelAnimationBehavior, {"OnUpdated":"{\"AnimationName\":\"Parallel\",\"duration\":\"0\",\"AnimationChildren\":[{\"AnimationName\":\"FadeIn\",\"duration\":\".25\",\"Fps\":\"30\",\"minimumOpacity\":\".2\",\"AnimationChildren\":[]},{\"AnimationName\":\"ScriptAction\",\"Script\":\"onUpdated();\",\"AnimationChildren\":[]}]}","OnUpdating":"{\"AnimationName\":\"Parallel\",\"duration\":\"0\",\"AnimationChildren\":[{\"AnimationName\":\"ScriptAction\",\"Script\":\"onUpdating();\",\"AnimationChildren\":[]},{\"AnimationName\":\"FadeOut\",\"duration\":\".25\",\"Fps\":\"30\",\"minimumOpacity\":\".2\",\"AnimationChildren\":[]}]}","id":"animation"}, null, null, $get("ctl00_cph_main_content_ArticleList_upArticleList"));
+});
+//]]>
+    </script>
+   </div>
+  </form>
+  <script type="text/javascript">
+   $(document).ready(function () {
+                const firstName = "";
+                const storeID = 0;
+                const storeName = ""
+                const userLoggedIn = "False";
+                const props = {
+                    location: window.location   
+                };
+
+                if(userLoggedIn === "True") {
+                    props.user = {};
+
+                    if(firstName) {
+                        props.user.firstName = firstName;
+                    }
+                }
+
+                if(storeID && storeName){
+                    props.selectedStore = {
+                        id: storeID,
+                        name: storeName
+                    };
+                }
+
+                const headerElement = React.createElement(window.navigation.Header, props);
+                ReactDOM.render(headerElement, document.querySelector('.header-container'));
+
+                const footerElement = React.createElement(window.navigation.Footer);
+                ReactDOM.render(footerElement, document.querySelector('.footer-container'));
+            });
+  </script>
+  <script src="/js/bootstrap.min.js" type="text/javascript">
+  </script>
+  <script src="/js/holder.min.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery.ui.widget.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery.ui.accordion.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery.hoverIntent.minified.js" type="text/javascript">
+  </script>
+  <script src="/js/facebox.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(document).on('click.bs.dropdown.data-api', '.dropdown', function (e) { e.stopPropagation() });
+                $( "div.item" ).first().addClass( "active" );
+                function pageLoad() {
+                $('a[rel*=facebox]').facebox({
+                loading_image: 'loading.gif',
+                close_image: 'closelabel.gif'
+            })
+            $("a.preview").hover(function (e) {
+                this.t = this.title;
+                this.title = "";
+                var c = (this.t != "") ? "<br/>" + this.t : "";
+                $("body").append("<p id='preview'><img src='" + this.href + "' alt='Image preview' />" + c + "</p>");
+                $("#preview")
+                .css("top", (e.pageY - 100) + "px")
+                .css("left", (e.pageX + 20) + "px")
+                .fadeIn("fast");
+            },
+            function () {
+                this.title = this.t;
+                    $("#preview").remove();
+                });
+                $("a.preview").mousemove(function (e) {
+                    $("#preview")
+                        .css("top", (e.pageY - 100) + "px")
+                        .css("left", (e.pageX + 20) + "px");
+                    });
+                }
+                $(document).ready(function ($) {
+                
+            });
+  </script>
+  <script>
+   $(function() {
+                $( "#accordion" ).accordion({
+                    heightStyle: "content"
+                });
+            });
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {
+                $(".search-query-input").focus(function(){
+                    $(this).parent().addClass('maximize');
+                }).blur(function(){
+                    $(this).parent().removeClass('maximize');
+                });
+            });
+            /* This appears to be for mobile nav when clicking "Menu" or "Search" to collapse the other. If we keep this code, we may want to limit the scope so that general Collapse elements work as expected. ---
+			------------------------------
+			$(document).click(function(e) {
+                if (!$(e.target).is('a')) {
+                    $('.collapse').collapse('hide');        
+                }
+            });*/
+			
+			//var fspCount = 123; //SET IN CMS
+			var scrollHome = false;
+			stopScrollDetect = false;
+			stopScrollDetectVideo = false;
+			
+			if(document.getElementById('myTargetElement') != null || document.getElementById('myTargetElementVideo') != null) { 
+				  //if these ID's exist on the page, then run the scroll position detection (only used on homepage for now)
+				  var scrollHome = true;
+			  }//end if
+			
+			$(window).scroll(function(){
+				
+				if (scrollHome == true && stopScrollDetect == false){
+					
+				  function elementScrolled(elem) {
+					var docViewTop = $(window).scrollTop();
+					var docViewBottom = docViewTop + $(window).height();
+					var elemTop = $(elem).offset().top;
+					return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+				  }
+
+				  var options = {		  
+					  useEasing : true,		  
+					  useGrouping : true,		  
+					  separator : ',',		  
+					  decimal : '.',		  
+					  prefix : '',		  
+					  suffix : ''		
+				  };		
+				  var demo = new CountUp("myTargetElement", 0, fspCount, 0, 2.5, options);		
+
+				  if(elementScrolled('#myTargetElement') && stopScrollDetect == false) {
+					demo.start();
+					stopScrollDetect = true;
+				  }
+				}
+
+			});
+  </script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=hyveeadvertising" type="text/javascript">
+  </script>
+  <!-- n16 -->
+ </body>
+</html>
+
