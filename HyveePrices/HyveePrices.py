@@ -40,6 +40,31 @@ def build_response(session_attributes, speechlet_response):
         'response': speechlet_response
     }
 
+def getItem(str):
+    # item = str(search)
+    url = "https://www.hy-vee.com/grocery/calls/SearchList.aspx?search=" + str + "&dep=0&depgroup=0&cat=0&subcat=0&brands=&diets=&sizes=&onsale=0&fuelsaver=0&coupon=0&whatIBuy=0&startIndex=1&ReturnAmount=120&sortID=5&init=true&squID=63339564&lockerEligibleFilter=false&type=filter&sreID=0"
+    f = urllib.urlopen(url)
+    # Get the raw html
+    html = f.read()
+
+    # Find the beginning and the end of the json string
+    startOfJSON = html.find("dataLayer.push(") + 15
+    endOfJSON = html.find("productListGTM-1") - 12
+
+    # Clip the html down to just the json string and get into dictionary
+    raw_json = html[startOfJSON:endOfJSON] + '}'
+    # raw_json.rstrip("\r\n")
+    raw_json = raw_json.replace('\n', ' ').replace('\r', '').replace('\'', '\"')
+    parsed_json = json.loads(raw_json)
+
+    # Make the dict of items
+    items = parsed_json["ecommerce"]["impressions"]
+
+    # for item in items:
+        #do whatever with each item in the query
+        # print item["name"] + '\t\t\t\t\t\t $' + item['price']
+    return item["name"] + '\t\t\t\t\t\t $' + item['price']
+
 
 # --------------- Functions that control the skill's behavior ------------------
 
@@ -84,8 +109,8 @@ def handle_session_end_request():
         card_title, speech_output, None, should_end_session))
 
 
-def create_favorite_color_attributes(favorite_color):
-    return {"favoriteColor": favorite_color}
+def create_food_attributes(food_asked):
+    return {"foodAsked": food_asked}
 
 
 def set_food_in_session(intent, session):
@@ -96,21 +121,20 @@ def set_food_in_session(intent, session):
     session_attributes = {}
     should_end_session = False
 
-    if 'Color' in intent['slots']:
-        favorite_color = intent['slots']['Color']['value']
-        session_attributes = create_favorite_color_attributes(favorite_color)
-        speech_output = "I now know your favorite color is " + \
-                        favorite_color + \
-                        ". You can ask me your favorite color by saying, " \
-                        "what's my favorite color?"
+    if 'food' in intent['slots']:
+        food = intent['slots']['food']['value']
+        session_attributes = create_food_attributes(food)
+        speech_output = "You asked for " + food
+        #                 ". You can ask me your favorite color by saying, " \
+        #                 "what's my favorite color?"
         reprompt_text = "You can ask me your favorite color by saying, " \
                         "what's my favorite color?"
     else:
-        speech_output = "I'm not sure what your favorite color is. " \
+        speech_output = "I'm not sure what food you said. " \
                         "Please try again."
-        reprompt_text = "I'm not sure what your favorite color is. " \
-                        "You can tell me your favorite color by saying, " \
-                        "my favorite color is red."
+        reprompt_text = "I'm not sure what food you said. " \
+                        "Please tell me what item's price you'd like to know by saying, " \
+                        "what is the price of item"
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
@@ -167,7 +191,7 @@ def on_intent(intent_request, session):
     intent_name = intent_request['intent']['name']
 
     # Dispatch to your skill's intent handlers
-    if intent_name == "MyColorIsIntent":
+    if intent_name == "PriceIntent":
         return set_food_in_session(intent, session)
     elif intent_name == "WhatsMyColorIntent":
         return get_color_from_session(intent, session)
