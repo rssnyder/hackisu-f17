@@ -285,6 +285,8 @@ def on_intent(intent_request, session):
         return set_food_in_session(intent, session)
     elif intent_name == "CouponIntent":
         return set_coupons(intent, session)
+    elif intent_name == "GetSmile" :
+        return get_smile(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return helper_method_get_instructions()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
