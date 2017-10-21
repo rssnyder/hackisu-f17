@@ -34,6 +34,26 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
         'shouldEndSession': should_end_session
     }
 
+def build_speechlet_response_money(title, output, reprompt_text, should_end_session):
+    return {
+        'outputSpeech': {
+            'type': 'PlainText',
+            'text': output
+        },
+        'card': {
+            'type': 'Simple',
+            'title': "SessionSpeechlet - " + title,
+            'content': "SessionSpeechlet - " + output
+        },
+        'reprompt': {
+            'outputSpeech': {
+                'type': 'PlainText',
+                'text': reprompt_text
+            }
+        },
+        'shouldEndSession': should_end_session
+    }
+
 
 def build_response(session_attributes, speechlet_response):
     return {
@@ -80,11 +100,11 @@ def get_welcome_response():
     card_title = "Welcome"
     speech_output = "Welcome to Hyvee Prices. " \
                     "Please tell me what item's price you'd like to know by saying, " \
-                    "what is the price of steak"
+                    "what is the price of, and the item you're looking for"
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
     reprompt_text = "Please tell me what item's price you'd like to know by saying, " \
-                    "what is the price of steak"
+                    "what is the price of, and the item you're looking for"
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -95,7 +115,7 @@ def helper_method_get_instructions():
     session_attributes = {}
     card_title = "Help"
     speech_output = "Please tell me what item's price you'd like to know by saying, " \
-                    "what is the price of steak"
+                    "what is the price of, and the item you're looking for"
 
     reprompt_text = "What would you like me to do?"
     should_end_session = False
@@ -132,14 +152,13 @@ def set_food_in_session(intent, session):
         speech_output = food_price
         #                 ". You can ask me your favorite color by saying, " \
         #                 "what's my favorite color?"
-        reprompt_text = "You can ask me your favorite color by saying, " \
-                        "what's my favorite color?"
+        reprompt_text = "What item whould you like to know the price of?"
     else:
         speech_output = "I'm not sure what food you said. " \
                         "Please try again."
         reprompt_text = "I'm not sure what food you said. " \
                         "Please tell me what item's price you'd like to know by saying, " \
-                        "what is the price of item"
+                        "what is the price of, and the item you're looking for"
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
