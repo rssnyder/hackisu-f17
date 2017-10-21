@@ -21,7 +21,9 @@ def getItem(str):
     # Make the dict of items
     items = parsed_json["ecommerce"]["impressions"]
 
-    print items[0]
+    for item in items:
+        #do whatever with each item in the query
+        print item["name"] + '\t\t\t\t\t\t $' + item['price']
 
 
-getItem("corn")
+getItem("steak")
