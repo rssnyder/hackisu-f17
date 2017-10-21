@@ -76,9 +76,8 @@ def create_favorite_color_attributes(favorite_color):
     return {"favoriteColor": favorite_color}
 
 
-def set_color_in_session(intent, session):
-    """ Sets the color in the session and prepares the speech to reply to the
-    user.
+def set_food_in_session(intent, session):
+    """ Sets the food that the user asked about.
     """
 
     card_title = intent['name']
