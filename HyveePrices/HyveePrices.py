@@ -159,7 +159,7 @@ def helper_method_get_instructions():
         card_title, speech_output, reprompt_text,should_end_session))
 
 def get_smile(intent, session):
-    card_title= "What can I find on every aisle?"
+    card_title= "What can I find in every aisle?"
     speech_output= "A smile"
     should_end_session=True
     reprompt_text = "What would you like to do?"
