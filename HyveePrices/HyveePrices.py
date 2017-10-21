@@ -9,6 +9,9 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
+import json
+import urllib
+
 firstRun = True
 
 
@@ -65,7 +68,7 @@ def getItem(str):
     # for item in items:
         #do whatever with each item in the query
         # print item["name"] + '\t\t\t\t\t\t $' + item['price']
-    return item["name"] + '\t\t\t\t\t\t $' + item['price']
+    return items.item["name"] + '\t\t\t\t\t\t $' + items.item['price']
 
 
 # --------------- Functions that control the skill's behavior ------------------
@@ -129,9 +132,11 @@ def set_food_in_session(intent, session):
     if 'food' in intent['slots']:
         food = intent['slots']['food']['value']
         session_attributes = create_food_attributes(food)
-        speech_output = "You asked for " + food
+        speech_output = "You asked for " + food + ". Is that correct? Reply with yes or no."
         #                 ". You can ask me your favorite color by saying, " \
         #                 "what's my favorite color?"
+
+        getItem(food)
         reprompt_text = "You can ask me your favorite color by saying, " \
                         "what's my favorite color?"
     else:
@@ -142,7 +147,6 @@ def set_food_in_session(intent, session):
                         "what is the price of item"
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
-
 
 def get_color_from_session(intent, session):
     session_attributes = {}
