@@ -62,9 +62,21 @@ def get_welcome_response():
         card_title, speech_output, reprompt_text, should_end_session))
 
 
+def helper_method_get_instructions():
+
+    session_attributes = {}
+    card_title = "Help"
+    speech_output = "Please tell me what item's price you'd like to know by saying, " \
+                    "what is the price of steak"
+
+    reprompt_text = "What would you like me to do?"
+    should_end_session = False
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text,should_end_session))
+
 def handle_session_end_request():
     card_title = "Session Ended"
-    speech_output = "Thank you for trying the Alexa Skills Kit sample. " \
+    speech_output = "Thank you for trying Hyvee Prices. " \
                     "Have a nice day! "
     # Setting this to true ends the session and exits the skill.
     should_end_session = True
@@ -124,6 +136,7 @@ def get_color_from_session(intent, session):
         intent['name'], speech_output, reprompt_text, should_end_session))
 
 
+
 # --------------- Events ------------------
 
 def on_session_started(session_started_request, session):
@@ -155,11 +168,11 @@ def on_intent(intent_request, session):
 
     # Dispatch to your skill's intent handlers
     if intent_name == "MyColorIsIntent":
-        return set_color_in_session(intent, session)
+        return set_food_in_session(intent, session)
     elif intent_name == "WhatsMyColorIntent":
         return get_color_from_session(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
-        return get_welcome_response()
+        return helper_method_get_instructions()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
         return handle_session_end_request()
     else:
