@@ -243,7 +243,7 @@ jokes=[
 def make_me_smile(intent, session):
     card_title= "Make me smile"
     speech_output= random.choice(jokes)
-    should_end_session=True
+    should_end_session=False
     reprompt_text = "What would you like to do?"
     return build_response({}, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
