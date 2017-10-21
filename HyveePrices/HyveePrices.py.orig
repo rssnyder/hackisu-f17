@@ -8,21 +8,33 @@ http://amzn.to/1LGWsLG
 """
 
 from __future__ import print_function
-<<<<<<< HEAD
-
-import json
-import urllib
-
-firstRun = True
-=======
 import urllib
 import json
->>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
 
 
 # --------------- Helpers that build all of the responses ----------------------
 
 def build_speechlet_response(title, output, reprompt_text, should_end_session):
+    return {
+        'outputSpeech': {
+            'type': 'PlainText',
+            'text': output
+        },
+        'card': {
+            'type': 'Simple',
+            'title': "SessionSpeechlet - " + title,
+            'content': "SessionSpeechlet - " + output
+        },
+        'reprompt': {
+            'outputSpeech': {
+                'type': 'PlainText',
+                'text': reprompt_text
+            }
+        },
+        'shouldEndSession': should_end_session
+    }
+
+def build_speechlet_response_money(title, output, reprompt_text, should_end_session):
     return {
         'outputSpeech': {
             'type': 'PlainText',
@@ -50,6 +62,8 @@ def build_response(session_attributes, speechlet_response):
         'response': speechlet_response
     }
 
+# --------------- Method to get prices of grocery items ----------------------
+
 def get_item(str):
     # item = str(search)
     url = "https://www.hy-vee.com/grocery/calls/SearchList.aspx?search=" + str + "&dep=0&depgroup=0&cat=0&subcat=0&brands=&diets=&sizes=&onsale=0&fuelsaver=0&coupon=0&whatIBuy=0&startIndex=1&ReturnAmount=120&sortID=5&init=true&squID=63339564&lockerEligibleFilter=false&type=filter&sreID=0"
@@ -73,13 +87,21 @@ def get_item(str):
     # for item in items:
         #do whatever with each item in the query
         # print item["name"] + '\t\t\t\t\t\t $' + item['price']
-<<<<<<< HEAD
-    return items.item["name"] + '\t\t\t\t\t\t $' + items.item['price']
-=======
     return items[0]['name'] + " is " + items[0]['price'] + " dollars"
         # item["name"] + '\t\t\t\t\t\t $' + item['price']
->>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
 
+# --------------- Method to get current top coupons ----------------------
+
+def getCoupons():
+    url = "https://www.hy-vee.com/deals/coupons.aspx"
+    f = urllib.urlopen(url)
+    # Get the raw html
+    html = f.read()
+
+    #Find the first row of coupons
+    startOfCoupons = html.find("flex-container flex-4x") + 3
+    raw_coupons = html[startOfCoupons:]
+    print raw_coupons
 
 # --------------- Functions that control the skill's behavior ------------------
 
@@ -92,11 +114,11 @@ def get_welcome_response():
     card_title = "Welcome"
     speech_output = "Welcome to Hyvee Prices. " \
                     "Please tell me what item's price you'd like to know by saying, " \
-                    "what is the price of steak"
+                    "what is the price of, and the item you're looking for"
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
     reprompt_text = "Please tell me what item's price you'd like to know by saying, " \
-                    "what is the price of steak"
+                    "what is the price of, and the item you're looking for"
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -107,7 +129,7 @@ def helper_method_get_instructions():
     session_attributes = {}
     card_title = "Help"
     speech_output = "Please tell me what item's price you'd like to know by saying, " \
-                    "what is the price of steak"
+                    "what is the price of, and the item you're looking for"
 
     reprompt_text = "What would you like me to do?"
     should_end_session = False
@@ -139,34 +161,29 @@ def set_food_in_session(intent, session):
     if 'food' in intent['slots']:
         food = intent['slots']['food']['value']
         session_attributes = create_food_attributes(food)
-<<<<<<< HEAD
-        speech_output = "You asked for " + food + ". Is that correct? Reply with yes or no."
-=======
 
         food_price = get_item(food)
         speech_output = food_price
->>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
         #                 ". You can ask me your favorite color by saying, " \
         #                 "what's my favorite color?"
-
-        getItem(food)
-        reprompt_text = "You can ask me your favorite color by saying, " \
-                        "what's my favorite color?"
+        reprompt_text = "What item whould you like to know the price of?"
     else:
         speech_output = "I'm not sure what food you said. " \
                         "Please try again."
         reprompt_text = "I'm not sure what food you said. " \
                         "Please tell me what item's price you'd like to know by saying, " \
+<<<<<<< HEAD
                         "what is the price of item"
+
+
+=======
+                        "what is the price of, and the item you're looking for"
+>>>>>>> 3f00fddf524324fee161022831644d5ee542cdac
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
-<<<<<<< HEAD
-def get_color_from_session(intent, session):
-=======
 
 def get_food_price(food_asked):
->>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
     session_attributes = {}
     reprompt_text = None
 
@@ -227,8 +244,6 @@ def on_intent(intent_request, session):
     # Dispatch to your skill's intent handlers
     if intent_name == "PriceIntent":
         return set_food_in_session(intent, session)
-    elif intent_name == "WhatsMyColorIntent":
-        return get_color_from_session(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return helper_method_get_instructions()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
