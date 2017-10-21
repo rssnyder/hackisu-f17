@@ -62,6 +62,8 @@ def build_response(session_attributes, speechlet_response):
         'response': speechlet_response
     }
 
+# --------------- Method to get prices of grocery items ----------------------
+
 def get_item(str):
     # item = str(search)
     url = "https://www.hy-vee.com/grocery/calls/SearchList.aspx?search=" + str + "&dep=0&depgroup=0&cat=0&subcat=0&brands=&diets=&sizes=&onsale=0&fuelsaver=0&coupon=0&whatIBuy=0&startIndex=1&ReturnAmount=120&sortID=5&init=true&squID=63339564&lockerEligibleFilter=false&type=filter&sreID=0"
@@ -88,6 +90,18 @@ def get_item(str):
     return items[0]['name'] + " is " + items[0]['price'] + " dollars"
         # item["name"] + '\t\t\t\t\t\t $' + item['price']
 
+# --------------- Method to get current top coupons ----------------------
+
+def getCoupons():
+    url = "https://www.hy-vee.com/deals/coupons.aspx"
+    f = urllib.urlopen(url)
+    # Get the raw html
+    html = f.read()
+
+    #Find the first row of coupons
+    startOfCoupons = html.find("flex-container flex-4x") + 3
+    raw_coupons = html[startOfCoupons:]
+    print raw_coupons
 
 # --------------- Functions that control the skill's behavior ------------------
 

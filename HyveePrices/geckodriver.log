@@ -1,0 +1,26 @@
+1508604876204	geckodriver	INFO	geckodriver 0.19.0
+1508604876208	geckodriver	INFO	Listening on 127.0.0.1:43608
+1508604877321	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.OcANRBL1gBz1"
+1508604877927	Marionette	INFO	Enabled via --marionette
+1508604879362	Marionette	INFO	Listening on port 36801
+1508604879458	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1508604879503	Marionette	DEBUG	loaded listener.js
+1508604879534	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1508604879916	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1508604879916	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1508604880077	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.hy-vee.com/deals/coupons.aspx"
+1508604880081	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.hy-vee.com/deals/coupons.aspx"
+1508604921432	geckodriver	INFO	geckodriver 0.19.0
+1508604921435	geckodriver	INFO	Listening on 127.0.0.1:49145
+1508604922552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.nSrMg9Pb8cUW"
+1508604923150	Marionette	INFO	Enabled via --marionette
+1508604924748	Marionette	INFO	Listening on port 35832
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1508604924772	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508604924827	Marionette	DEBUG	loaded listener.js
+1508604924909	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1508604925211	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1508604925212	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1508604925364	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.hy-vee.com/deals/coupons.aspx"
+1508604925368	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.hy-vee.com/deals/coupons.aspx"
