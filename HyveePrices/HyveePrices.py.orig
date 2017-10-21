@@ -8,8 +8,16 @@ http://amzn.to/1LGWsLG
 """
 
 from __future__ import print_function
+<<<<<<< HEAD
+
+import json
+import urllib
+
+firstRun = True
+=======
 import urllib
 import json
+>>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
 
 
 # --------------- Helpers that build all of the responses ----------------------
@@ -65,8 +73,12 @@ def get_item(str):
     # for item in items:
         #do whatever with each item in the query
         # print item["name"] + '\t\t\t\t\t\t $' + item['price']
+<<<<<<< HEAD
+    return items.item["name"] + '\t\t\t\t\t\t $' + items.item['price']
+=======
     return items[0]['name'] + " is " + items[0]['price'] + " dollars"
         # item["name"] + '\t\t\t\t\t\t $' + item['price']
+>>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
 
 
 # --------------- Functions that control the skill's behavior ------------------
@@ -127,11 +139,17 @@ def set_food_in_session(intent, session):
     if 'food' in intent['slots']:
         food = intent['slots']['food']['value']
         session_attributes = create_food_attributes(food)
+<<<<<<< HEAD
+        speech_output = "You asked for " + food + ". Is that correct? Reply with yes or no."
+=======
 
         food_price = get_item(food)
         speech_output = food_price
+>>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
         #                 ". You can ask me your favorite color by saying, " \
         #                 "what's my favorite color?"
+
+        getItem(food)
         reprompt_text = "You can ask me your favorite color by saying, " \
                         "what's my favorite color?"
     else:
@@ -140,13 +158,15 @@ def set_food_in_session(intent, session):
         reprompt_text = "I'm not sure what food you said. " \
                         "Please tell me what item's price you'd like to know by saying, " \
                         "what is the price of item"
-
-
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
+<<<<<<< HEAD
+def get_color_from_session(intent, session):
+=======
 
 def get_food_price(food_asked):
+>>>>>>> 484da3205f1b43816efd64fb40d81b9143de4ebe
     session_attributes = {}
     reprompt_text = None
 
@@ -207,6 +227,8 @@ def on_intent(intent_request, session):
     # Dispatch to your skill's intent handlers
     if intent_name == "PriceIntent":
         return set_food_in_session(intent, session)
+    elif intent_name == "WhatsMyColorIntent":
+        return get_color_from_session(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return helper_method_get_instructions()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
