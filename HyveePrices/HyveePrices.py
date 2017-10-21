@@ -10,31 +10,14 @@ http://amzn.to/1LGWsLG
 from __future__ import print_function
 import urllib
 import json
+import urllib2
+import random
+
 
 
 # --------------- Helpers that build all of the responses ----------------------
 
 def build_speechlet_response(title, output, reprompt_text, should_end_session):
-    return {
-        'outputSpeech': {
-            'type': 'PlainText',
-            'text': output
-        },
-        'card': {
-            'type': 'Simple',
-            'title': "SessionSpeechlet - " + title,
-            'content': "SessionSpeechlet - " + output
-        },
-        'reprompt': {
-            'outputSpeech': {
-                'type': 'PlainText',
-                'text': reprompt_text
-            }
-        },
-        'shouldEndSession': should_end_session
-    }
-
-def build_speechlet_response_money(title, output, reprompt_text, should_end_session):
     return {
         'outputSpeech': {
             'type': 'PlainText',
@@ -87,21 +70,60 @@ def get_item(str):
     # for item in items:
         #do whatever with each item in the query
         # print item["name"] + '\t\t\t\t\t\t $' + item['price']
-    return items[0]['name'] + " is " + items[0]['price'] + " dollars"
+    return items[0]['name'] + " is " + "$" + items[0]['price']
         # item["name"] + '\t\t\t\t\t\t $' + item['price']
 
 # --------------- Method to get current top coupons ----------------------
+def get_coupons():
+    # Pretend to be firefox and get the webpage
+    url = "https://www.couponmom.com/best-coupon-deals-hyvee"
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    req = urllib2.Request(url, None, headers)
+    html = urllib2.urlopen(req).read()
 
-def getCoupons():
-    url = "https://www.hy-vee.com/deals/coupons.aspx"
-    f = urllib.urlopen(url)
-    # Get the raw html
-    html = f.read()
+    # Use BeautifulSoup
+    # soup = BeautifulSoup(html, 'html.parser')
 
-    #Find the first row of coupons
-    startOfCoupons = html.find("flex-container flex-4x") + 3
-    raw_coupons = html[startOfCoupons:]
-    print raw_coupons
+    # We cant use beautifulsoup :( Get all the deals
+    # deals = BeautifulSoup(str(soup.find_all('ol', 'hot_deal_list', 'href')), 'html.parser')
+
+    # get the start of the coupons
+    start = html.find('<ol class=\"hot_deal_list\">') + 27
+    html = html[start:]
+
+    # list for coupons
+    allCoupons = []
+    count = 0
+
+    theEnd = 1;
+    while bool(theEnd):
+        # Get coupon price
+        startPrice = html.find('<span class=\"\">') + 15
+        endPrice = html.find(':')
+        itemPrice = html[startPrice:endPrice]
+
+        # Get coupon desc
+        startDesc = html.find('</span>') + 8
+        endDesc = html.find('</a>')
+        itemDesc = html[startDesc:endDesc]
+        itemDesc = itemDesc.replace("ct", "count")
+        itemDesc = itemDesc.replace("oz", "ounces")
+
+        # cut the html down to get next item
+        nextItem = html.find('</li>') + 6
+        html = html[nextItem:]
+
+        # build text
+        allCoupons.insert(count, itemDesc + 'are on sale for ' + itemPrice)
+        count = count + 1
+
+        # check for end of coupons
+        end = html.find('</ol>')
+        if end < 10:
+            theEnd = 0
+
+    return allCoupons
+
 
 # --------------- Functions that control the skill's behavior ------------------
 
@@ -166,7 +188,7 @@ def set_food_in_session(intent, session):
         speech_output = food_price
         #                 ". You can ask me your favorite color by saying, " \
         #                 "what's my favorite color?"
-        reprompt_text = "What item whould you like to know the price of?"
+        reprompt_text = "What item would you like to know the price of?"
     else:
         speech_output = "I'm not sure what food you said. " \
                         "Please try again."
@@ -206,6 +228,22 @@ def get_food_price(food_asked):
 
 
 
+def set_coupons(intent, session):
+    card_title = intent['name']
+    session_attributes = {}
+    should_end_session = False
+
+    coupons = get_coupons()
+
+    rando = random.randint(0,len(coupons))
+    speech_output = coupons[rando]
+
+    reprompt_text = "What would you like to do?"
+
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+
 # --------------- Events ------------------
 
 def on_session_started(session_started_request, session):
@@ -238,8 +276,8 @@ def on_intent(intent_request, session):
     # Dispatch to your skill's intent handlers
     if intent_name == "PriceIntent":
         return set_food_in_session(intent, session)
-    elif intent_name == "WhatsMyColorIntent":
-        return get_color_from_session(intent, session)
+    elif intent_name == "CouponIntent":
+        return set_coupons(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return helper_method_get_instructions()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
