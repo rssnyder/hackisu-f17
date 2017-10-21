@@ -198,7 +198,7 @@ def get_welcome_response():
     session_attributes = {}
     card_title = "Welcome"
     speech_output = "Welcome to Hyvee Prices. " \
-                    "Ask about grocies or deals"
+                    "Ask about grocies, deals, or news."
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
     reprompt_text = "Please tell me what item's price you'd like to know by saying, " \
@@ -230,14 +230,14 @@ def get_smile(intent, session):
 
 jokes=[
     'What if soy milk is just regular milk introducing itself in Spanish?',
-    'What do you call cheese that isn’t yours? Nacho cheese',
-    'What did the baby corn say to its mom? Where’s my pop corn?',
+    'What do you call cheese that is not yours? Nacho cheese',
+    'What did the baby corn say to its mom? Where is my pop corn?',
     'What do you call a fake noodle? An impasta',
     'Why did the tomato blush? Because it saw the salad dressing.',
-    'Why don’t eggs tell jokes? They’d crack each other up!',
+    'Why do not eggs tell jokes? They would crack each other up!',
     'What does a nosey pepper do? Gets jalapeno business!',
     'Waffles are just pancakes with abs',
-    'Your name must be Coca Cola, because you’re soda licious.'
+    'Your name must be Coca Cola, because you are soda licious.'
 ]
 
 def make_me_smile(intent, session):
