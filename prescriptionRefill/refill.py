@@ -1,5 +1,5 @@
 import requests
-url = "http://somewebsite.com/prescriptions"
+url = "https://www.hy-vee.com/my-pharmacy/refill"
 payload = "{'someContent':'SomeValue'}"
 headers = {
     'accept': "application/json",
