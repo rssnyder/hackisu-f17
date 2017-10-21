@@ -24,7 +24,7 @@ We are proud of our success in creating our first Alexa Skill, learning python, 
 
 # What we learned
 
-# We learned how to use Amazon Alexa’s skill development kits, and we all learned how to use python for the first time during this hackathon.
+We learned how to use Amazon Alexa’s skill development kits, and we all learned how to use python for the first time during this hackathon.
 
 # What's next for HyVee Prices
 
