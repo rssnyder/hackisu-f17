@@ -13,6 +13,17 @@ import json
 import urllib2
 import random
 
+jokes=[
+    'What if soy milk is just regular milk introducing itself in Spanish?',
+    'What do you call cheese that isn’t yours? Nacho cheese',
+    'What did the baby corn say to its mom? Where’s my pop corn?',
+    'What do you call a fake noodle? An impasta',
+    'Why did the tomato blush? Because it saw the salad dressing.',
+    'Why don’t eggs tell jokes? They’d crack each other up!',
+    'What does a nosey pepper do? Gets jalapeño business!',
+    'Waffles are just pancakes with abs',
+    'Your name must be Coca Cola, because you’re soda licious.'
+]
 
 
 # --------------- Helpers that build all of the responses ----------------------
