@@ -8,6 +8,8 @@ http://amzn.to/1LGWsLG
 """
 
 from __future__ import print_function
+import urllib
+import json
 
 
 # --------------- Helpers that build all of the responses ----------------------
@@ -40,7 +42,7 @@ def build_response(session_attributes, speechlet_response):
         'response': speechlet_response
     }
 
-def getItem(str):
+def get_item(str):
     # item = str(search)
     url = "https://www.hy-vee.com/grocery/calls/SearchList.aspx?search=" + str + "&dep=0&depgroup=0&cat=0&subcat=0&brands=&diets=&sizes=&onsale=0&fuelsaver=0&coupon=0&whatIBuy=0&startIndex=1&ReturnAmount=120&sortID=5&init=true&squID=63339564&lockerEligibleFilter=false&type=filter&sreID=0"
     f = urllib.urlopen(url)
@@ -63,7 +65,8 @@ def getItem(str):
     # for item in items:
         #do whatever with each item in the query
         # print item["name"] + '\t\t\t\t\t\t $' + item['price']
-    return item["name"] + '\t\t\t\t\t\t $' + item['price']
+    return items[0]
+        # item["name"] + '\t\t\t\t\t\t $' + item['price']
 
 
 # --------------- Functions that control the skill's behavior ------------------
@@ -125,6 +128,7 @@ def set_food_in_session(intent, session):
         food = intent['slots']['food']['value']
         session_attributes = create_food_attributes(food)
         speech_output = "You asked for " + food
+        get_food_price(food)
         #                 ". You can ask me your favorite color by saying, " \
         #                 "what's my favorite color?"
         reprompt_text = "You can ask me your favorite color by saying, " \
@@ -139,19 +143,26 @@ def set_food_in_session(intent, session):
         card_title, speech_output, reprompt_text, should_end_session))
 
 
-def get_color_from_session(intent, session):
+def get_food_price(food_asked):
     session_attributes = {}
     reprompt_text = None
 
-    if session.get('attributes', {}) and "favoriteColor" in session.get('attributes', {}):
-        favorite_color = session['attributes']['favoriteColor']
-        speech_output = "Your favorite color is " + favorite_color + \
-                        ". Goodbye."
-        should_end_session = True
-    else:
-        speech_output = "I'm not sure what your favorite color is. " \
-                        "You can say, my favorite color is red."
-        should_end_session = False
+    price = get_item(food_asked)
+
+    session_attributes['returnedPrice'] = price
+
+    #change later:
+    should_end_session = true
+
+    # if session.get('attributes', {}) and "favoriteColor" in session.get('attributes', {}):
+    #     favorite_color = session['attributes']['favoriteColor']
+    #     speech_output = "Your favorite color is " + favorite_color + \
+    #                     ". Goodbye."
+    #     should_end_session = True
+    # else:
+    #     speech_output = "I'm not sure what your favorite color is. " \
+    #                     "You can say, my favorite color is red."
+    #     should_end_session = False
 
     # Setting reprompt_text to None signifies that we do not want to reprompt
     # the user. If the user does not respond or says something that is not
