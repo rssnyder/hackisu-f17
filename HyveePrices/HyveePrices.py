@@ -158,12 +158,13 @@ def helper_method_get_instructions():
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text,should_end_session))
 
-def get_smile():
+def get_smile(intent, session):
     card_title= "What can I find on every aisle?"
     speech_output= "A smile"
-    should_end_session=False
+    should_end_session=True
+    reprompt_text = "What would you like to do?"
     return build_response({}, build_speechlet_response(
-        card_title, speech_output, repromt_text, should_end_session))
+        card_title, speech_output, reprompt_text, should_end_session))
 
 def handle_session_end_request():
     card_title = "Session Ended"
