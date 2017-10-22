@@ -28,7 +28,7 @@ We learned how to use Amazon Alexa’s skill development kits, and we all learne
 
 # What's next for HyVee Prices
 
-We want to add functionality to express-refill prescriptions from Amazon Alexa, but we would need permissions from Hy-Vee to do so.
+We want to add functionality to express-refill prescriptions from Amazon Alexa, but we would need permissions from Hy-Vee to do so. We would also like to add a shopping list feature to add groceries you look up.
 
 # Built With
 
