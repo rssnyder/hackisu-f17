@@ -1,5 +1,5 @@
  # Hyvee Prices
-Our project for HackISU Fall 2017. 
+Our project for HackISU Fall 2017 - Awarded Best Retail Focused Hack 
 
 
 # Inspiration
